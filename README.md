@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9135d934-fb10-46ae-9437-6b9cb996fe3e/deploy-status)](https://app.netlify.com/sites/schoolmanagementwebapp/deploys)
+
 ## Available Scripts
 
 In the project directory, you can run:
