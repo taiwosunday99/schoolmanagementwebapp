@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Notifications from './Notifications'
+// import Notifications from './Notifications'
 import ProjectList from '../projects/ProjectList'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase';
@@ -19,10 +19,6 @@ export class Dashboard extends Component {
                     <ProjectList students={students} /> 
                                    
                     </div>
-                    {/* <div className='col s12 m5 offset-m1'>  
-                    <ProjectList projects={projects} />                    
-                            <Notifications />
-                        </div> */}
                 </div>
                 { projects && projects.map(project => {
                     return (
