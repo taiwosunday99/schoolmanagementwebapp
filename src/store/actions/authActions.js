@@ -36,6 +36,7 @@ export const signUp = (newStudent) => {
                 courseOfStudy: newStudent.courseOfStudy,
                 faculty: newStudent.faculty,
                 gender: newStudent.gender,
+                createdAt: newStudent.createdAt,
                 initials: newStudent.firstName[0] + newStudent.lastName[0]
             })
         }).then(() => {

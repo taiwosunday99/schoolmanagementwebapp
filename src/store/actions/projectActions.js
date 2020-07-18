@@ -1,5 +1,4 @@
  const  createProject = (project) => {
-    console.log(project)
     return (dispatch, getState, { getFirebase, getFirestore }) => {
         // make async call to database
         const firestore = getFirestore();

@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux'
 import { signOut } from '../../store/actions/authActions'
 
-const SignedInLinks = (props) => {
-       console.log(props)
+const SignedInLinks = (props, auth) => {
+       console.log(auth)
     return (
         <ul className='right'>
             <li><NavLink to='/create'>Course-Reg</NavLink></li>

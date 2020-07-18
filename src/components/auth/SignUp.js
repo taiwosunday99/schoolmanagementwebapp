@@ -13,7 +13,8 @@ import { Redirect } from 'react-router-dom';
         matricNo: '',
         courseOfStudy: '',
        gender: '',
-        faculty: ''
+        faculty: '',
+        createdAt: new Date()
     }
 
     

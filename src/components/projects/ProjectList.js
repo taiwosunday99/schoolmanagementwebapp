@@ -1,9 +1,11 @@
 import React from 'react';
 import ProjectSummary from './ProjectSummary';
+import CourseSummary from './ProjectSummary';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 const ProjectList = ({projects, students, auth}) => {
+    console.log(projects)
     return (
         // eslint-disable-next-line react/jsx-no-comment-textnodes
         <div className='project-list section'>
@@ -16,22 +18,23 @@ const ProjectList = ({projects, students, auth}) => {
                             </Link>
                         );
                 }
-                )}
-            {/* { projects && projects.map(project => {
+                )},
+            { projects && projects.map(course => {
+                console.log(course)
                 return (
-                    <Link to={'/project/' +  project.id} key={project.id}>
-                    <ProjectSummary project={project} />
+                    <Link to={'/project/' +  course.id} key={course.id}>
+                    <CourseSummary course={course} />
                     </Link>
                 )
-            })} */}
+            })}
         </div>
     )
 }
 
 const mapStateToProps = (state) => {
-    // console.log(state)
     return {
-        auth: state.firebase.auth
+        auth: state.firebase.auth,
+        courses: state.firestore.ordered.projects
     }
 }
 
