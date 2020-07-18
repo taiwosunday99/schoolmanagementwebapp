@@ -5,7 +5,9 @@ import { connect } from 'react-redux';
 
 const ProjectList = ({projects, students, auth}) => {
     return (
+        // eslint-disable-next-line react/jsx-no-comment-textnodes
         <div className='project-list section'>
+             {/* eslint-disable-next-line array-callback-return */}
             { students && students.map((student) => {
                     if (auth.uid === student.id)
                         return (
@@ -13,7 +15,8 @@ const ProjectList = ({projects, students, auth}) => {
                                 <ProjectSummary student={student} />
                             </Link>
                         );
-                })}
+                }
+                )}
             {/* { projects && projects.map(project => {
                 return (
                     <Link to={'/project/' +  project.id} key={project.id}>
